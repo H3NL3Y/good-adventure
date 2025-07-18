@@ -7,3 +7,13 @@ class Book(db.Model):
 
     def __repr__(self):
         return f"<Book {self.title}>"
+    def test(self):
+        print(f"Hello {self.title}")
+
+
+class User(db.Model):
+    id = db.Column(db.Integer,primary_key=True)
+
+
+
+
