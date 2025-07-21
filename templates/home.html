@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Welcome, {{ username }}</h2>
+<a href="{{ url_for('logout') }}">Logout</a> |
+<a href="{{ url_for('add_book') }}">Add Book</a>
+
+<h3>Book List</h3>
+<ul>
+  {% for book in books %}
+    <li><strong>{{ book.title }}</strong> by {{ book.author }}<br>
+    Review: {{ book.review }}<br>
+    Added by: {{ book.added_by }}</li>
+  {% else %}
+    <li>No books added yet.</li>
+  {% endfor %}
+</ul>
+{% endblock %}
