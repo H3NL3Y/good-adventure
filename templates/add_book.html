@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Add a Book</h2>
+<form method="POST">
+  Title: <input name="title"><br>
+  Author: <input name="author"><br>
+  Review: <textarea name="review"></textarea><br>
+  <button type="submit">Add Book</button>
+</form>
+<a href="{{ url_for('home') }}">Back to Home</a>
+{% endblock %}
