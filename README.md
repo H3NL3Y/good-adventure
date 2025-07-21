@@ -5,14 +5,19 @@ A Goodread clone to help better improve my programming skills.
 
 >
 
+
+
+
 #### TODO:
 
 
-1. Create and establish TinyDB
-2. Create routes  - Build API or web endpoints
-3. Build frontend - Connect user interface
-4. Add authentication - Secure your app
-5. Test - Ensure reliability
+
+1. Build frontend - Connect user interface
+2. Esthablish a better review system. 
+
 
 
 >
+#### Completed: 
+1. Created and using TinyDB to store data.
+2. Created basic login and registration for users. 
